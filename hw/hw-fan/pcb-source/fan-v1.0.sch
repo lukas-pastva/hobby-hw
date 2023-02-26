@@ -1,0 +1,645 @@
+EESchema Schematic File Version 4
+LIBS:fan-v1.0-cache
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Text GLabel 3350 1550 2    60   Input ~ 0
+5v
+Text GLabel 3350 1650 2    60   Input ~ 0
+out
+Text GLabel 3350 1750 2    60   Input ~ 0
+in2-
+Text GLabel 3350 1850 2    60   Input ~ 0
+in2+
+Text GLabel 3000 850  2    60   Input ~ 0
+5v
+Text GLabel 2700 850  0    60   Input ~ 0
+out
+Text GLabel 2700 1150 0    60   Input ~ 0
+in2+
+Text GLabel 3000 1150 2    60   Input ~ 0
+5v
+Text GLabel 2050 1250 2    60   Input ~ 0
+in2+
+Text GLabel 2150 1700 2    60   Input ~ 0
+gnd
+NoConn ~ 2850 1650
+NoConn ~ 2850 1750
+NoConn ~ 2850 1550
+Text GLabel 2850 1850 0    60   Input ~ 0
+gnd
+Text GLabel 1750 1250 0    60   Input ~ 0
+gnd
+Text GLabel 1250 2800 0    60   Input ~ 0
+out
+Text GLabel 1750 800  0    60   Input ~ 0
+gnd
+Text GLabel 2050 800  2    60   Input ~ 0
+5v
+Text GLabel 1000 1200 3    60   Input ~ 0
+in2-
+Text GLabel 1150 1050 2    60   Input ~ 0
+gnd
+Text GLabel 850  1050 0    60   Input ~ 0
+5v
+Text Label 700  750  0    60   ~ 0
+fan
+Text GLabel 1250 3000 0    60   Input ~ 0
+gnd
+Text GLabel 2250 2500 1    60   Input ~ 0
+5v
+Wire Bus Line
+	600  600  600  3800
+Wire Bus Line
+	3800 600  3800 3800
+Wire Wire Line
+	1900 2900 1900 2600
+Wire Bus Line
+	3800 3800 600  3800
+Wire Wire Line
+	1550 3200 1900 3200
+Wire Wire Line
+	1900 3200 1900 3350
+Wire Bus Line
+	600  600  3800 600 
+$Comp
+L Connector_Generic:Conn_02x04_Counter_Clockwise J1
+U 1 1 5BB0BFF8
+P 3050 1650
+F 0 "J1" H 3100 1967 50  0000 C CNN
+F 1 "lm393" H 3100 1876 50  0000 C CNN
+F 2 "Power_Integrations:SO-8" H 3050 1650 50  0001 C CNN
+F 3 "~" H 3050 1650 50  0001 C CNN
+	1    3050 1650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Transistor_BJT:PN2222A Q1
+U 1 1 5BB0C9E4
+P 1450 3000
+F 0 "Q1" V 1778 3000 50  0000 C CNN
+F 1 "PN2222A" V 1687 3000 50  0000 C CNN
+F 2 "TO_SOT_Packages_SMD:SOT-23" H 1650 2925 50  0001 L CIN
+F 3 "http://www.fairchildsemi.com/ds/PN/PN2222A.pdf" H 1450 3000 50  0001 L CNN
+	1    1450 3000
+	1    0    0    1   
+$EndComp
+$Comp
+L Device:C C1
+U 1 1 5BB0D76E
+P 1900 800
+F 0 "C1" V 1648 800 50  0000 C CNN
+F 1 "C" V 1739 800 50  0000 C CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 1938 650 50  0001 C CNN
+F 3 "~" H 1900 800 50  0001 C CNN
+	1    1900 800 
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C C2
+U 1 1 5BB0D842
+P 1900 1250
+F 0 "C2" V 1648 1250 50  0000 C CNN
+F 1 "C" V 1739 1250 50  0000 C CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 1938 1100 50  0001 C CNN
+F 3 "~" H 1900 1250 50  0001 C CNN
+	1    1900 1250
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R5
+U 1 1 5BB0D973
+P 2850 1150
+F 0 "R5" V 2643 1150 50  0000 C CNN
+F 1 "R" V 2734 1150 50  0000 C CNN
+F 2 "Resistors_SMD:R_1206" V 2780 1150 50  0001 C CNN
+F 3 "~" H 2850 1150 50  0001 C CNN
+	1    2850 1150
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R1
+U 1 1 5BB0E225
+P 1400 2800
+F 0 "R1" V 1607 2800 50  0000 C CNN
+F 1 "R" V 1516 2800 50  0000 C CNN
+F 2 "Resistors_SMD:R_1206" V 1330 2800 50  0001 C CNN
+F 3 "~" H 1400 2800 50  0001 C CNN
+	1    1400 2800
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R_POT RV1
+U 1 1 5BB0EA0A
+P 1000 1050
+F 0 "RV1" V 793 1050 50  0000 C CNN
+F 1 "R_POT" V 884 1050 50  0000 C CNN
+F 2 "Potentiometers:Potentiometer_Trimmer_Bourns_3339P_Horizontal" H 1000 1050 50  0001 C CNN
+F 3 "~" H 1000 1050 50  0001 C CNN
+	1    1000 1050
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:Thermistor TH1
+U 1 1 5BB0ECD7
+P 1950 1700
+F 0 "TH1" H 2055 1746 50  0000 L CNN
+F 1 "Therm" H 2055 1655 50  0000 L CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x02_Pitch2.54mm" H 1950 1700 50  0001 C CNN
+F 3 "~" H 1950 1700 50  0001 C CNN
+	1    1950 1700
+	0    -1   -1   0   
+$EndComp
+Text GLabel 1750 1700 0    60   Input ~ 0
+in2+
+$Comp
+L Device:D D1
+U 1 1 5BB0FD29
+P 1900 3050
+F 0 "D1" V 1854 3129 50  0000 L CNN
+F 1 "D" V 1945 3129 50  0000 L CNN
+F 2 "Diodes_SMD:D_1206" H 1900 3050 50  0001 C CNN
+F 3 "~" H 1900 3050 50  0001 C CNN
+	1    1900 3050
+	0    1    1    0   
+$EndComp
+Connection ~ 1900 3200
+Wire Wire Line
+	1900 2600 2250 2600
+Wire Wire Line
+	2250 2500 2250 2600
+Text GLabel 3000 2400 0    50   Input ~ 0
+relay-out
+Text GLabel 2900 3200 0    60   Input ~ 0
+5v
+Wire Wire Line
+	2250 3200 2250 3350
+Wire Wire Line
+	2250 3350 1900 3350
+$Comp
+L Device:R R4
+U 1 1 5BB10F4C
+P 2850 850
+F 0 "R4" V 2643 850 50  0000 C CNN
+F 1 "R" V 2734 850 50  0000 C CNN
+F 2 "Resistors_SMD:R_1206" V 2780 850 50  0001 C CNN
+F 3 "~" H 2850 850 50  0001 C CNN
+	1    2850 850 
+	0    1    1    0   
+$EndComp
+$Comp
+L Relay:G5LE-1 K1
+U 1 1 5BBE0DD1
+P 2450 2900
+F 0 "K1" H 2880 2946 50  0000 L CNN
+F 1 "G5LE-1" H 2880 2855 50  0000 L CNN
+F 2 "Relays_THT:Relay_SPDT_SANYOU_SRD_Series_Form_C" H 2900 2850 50  0001 L CNN
+F 3 "http://www.omron.com/ecb/products/pdf/en-g5le.pdf" H 2450 2500 50  0001 C CNN
+	1    2450 2900
+	1    0    0    -1  
+$EndComp
+Connection ~ 2250 2600
+$Comp
+L Connector_Generic:Conn_01x04 J2
+U 1 1 5BB12EFF
+P 5100 1300
+F 0 "J2" H 5180 1292 50  0000 L CNN
+F 1 "Zdroj" H 5180 1201 50  0000 L CNN
+F 2 "psw-library:5v-zdroj-dual" H 5100 1300 50  0001 C CNN
+F 3 "~" H 5100 1300 50  0001 C CNN
+	1    5100 1300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x02 J3
+U 1 1 5BB136E2
+P 4300 1300
+F 0 "J3" H 4220 975 50  0000 C CNN
+F 1 "240V" H 4220 1066 50  0000 C CNN
+F 2 "psw-library:240v-c8" H 4300 1300 50  0001 C CNN
+F 3 "~" H 4300 1300 50  0001 C CNN
+	1    4300 1300
+	-1   0    0    1   
+$EndComp
+Text GLabel 4900 1800 0    60   Input ~ 0
+5v
+Text GLabel 4900 1500 0    60   Input ~ 0
+gnd
+$Comp
+L Device:Fuse F1
+U 1 1 5BB13C21
+P 4750 1200
+F 0 "F1" V 4553 1200 50  0000 C CNN
+F 1 "Fuse" V 4644 1200 50  0000 C CNN
+F 2 "Resistors_SMD:R_1812_HandSoldering" V 4680 1200 50  0001 C CNN
+F 3 "~" H 4750 1200 50  0001 C CNN
+	1    4750 1200
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4900 1300 4500 1300
+Wire Wire Line
+	4500 1200 4600 1200
+$Comp
+L Connector_Generic:Conn_01x04 J4
+U 1 1 5BB14463
+P 6400 2150
+F 0 "J4" H 6480 2142 50  0000 L CNN
+F 1 "charger" H 6480 2051 50  0000 L CNN
+F 2 "psw-library:psw-lipo-nabijacka" H 6400 2150 50  0001 C CNN
+F 3 "~" H 6400 2150 50  0001 C CNN
+	1    6400 2150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x03 sw1
+U 1 1 5BB2571A
+P 5100 1900
+F 0 "sw1" H 5179 1942 50  0000 L CNN
+F 1 "sw-zdroj" H 5179 1851 50  0000 L CNN
+F 2 "psw-library:psw-vypinac-maly-trojity" H 5100 1900 50  0001 C CNN
+F 3 "~" H 5100 1900 50  0001 C CNN
+	1    5100 1900
+	1    0    0    -1  
+$EndComp
+NoConn ~ 4900 2000
+Wire Wire Line
+	4900 1400 4450 1400
+Wire Wire Line
+	4450 1400 4450 1700
+Wire Wire Line
+	4450 1900 4900 1900
+$Comp
+L Connector_Generic:Conn_01x03 sw2
+U 1 1 5BB2618F
+P 5100 2500
+F 0 "sw2" H 5179 2542 50  0000 L CNN
+F 1 "sw-usb" H 5179 2451 50  0000 L CNN
+F 2 "psw-library:psw-vypinac-maly-trojity" H 5100 2500 50  0001 C CNN
+F 3 "~" H 5100 2500 50  0001 C CNN
+	1    5100 2500
+	1    0    0    -1  
+$EndComp
+Text GLabel 4900 2400 0    60   Input ~ 0
+5v
+NoConn ~ 4900 2600
+Text GLabel 4400 2900 2    60   Input ~ 0
+gnd
+$Comp
+L Connector_Generic:Conn_01x03 sw4
+U 1 1 5BB27A29
+P 6400 2700
+F 0 "sw4" H 6479 2742 50  0000 L CNN
+F 1 "sw-charge-usb" H 6479 2651 50  0000 L CNN
+F 2 "psw-library:psw-vypinac-maly-trojity" H 6400 2700 50  0001 C CNN
+F 3 "~" H 6400 2700 50  0001 C CNN
+	1    6400 2700
+	1    0    0    -1  
+$EndComp
+NoConn ~ 6200 2800
+$Comp
+L Connector_Generic:Conn_01x03 sw5
+U 1 1 5BB27C6E
+P 6400 3100
+F 0 "sw5" H 6480 3142 50  0000 L CNN
+F 1 "sw-charge-zdroj" H 6480 3051 50  0000 L CNN
+F 2 "psw-library:psw-vypinac-maly-trojity" H 6400 3100 50  0001 C CNN
+F 3 "~" H 6400 3100 50  0001 C CNN
+	1    6400 3100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x03 sw6
+U 1 1 5BB27FDE
+P 6400 3500
+F 0 "sw6" H 6480 3542 50  0000 L CNN
+F 1 "sw-batt-reg" H 6480 3451 50  0000 L CNN
+F 2 "psw-library:psw-vypinac-maly-trojity" H 6400 3500 50  0001 C CNN
+F 3 "~" H 6400 3500 50  0001 C CNN
+	1    6400 3500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x03 sw7
+U 1 1 5BB2808C
+P 6400 3900
+F 0 "sw7" H 6479 3942 50  0000 L CNN
+F 1 "sw-batt-norm" H 6479 3851 50  0000 L CNN
+F 2 "psw-library:psw-vypinac-maly-trojity" H 6400 3900 50  0001 C CNN
+F 3 "~" H 6400 3900 50  0001 C CNN
+	1    6400 3900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x05 J5
+U 1 1 5BB29C47
+P 4200 3100
+F 0 "J5" H 4120 2675 50  0000 C CNN
+F 1 "micro-usb" H 4120 2766 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x05_Pitch2.54mm" H 4200 3100 50  0001 C CNN
+F 3 "~" H 4200 3100 50  0001 C CNN
+	1    4200 3100
+	-1   0    0    1   
+$EndComp
+NoConn ~ 4400 3200
+NoConn ~ 4400 3100
+NoConn ~ 4400 3000
+$Comp
+L Connector_Generic:Conn_01x02 J6
+U 1 1 5BB2BCC2
+P 6400 1750
+F 0 "J6" H 6479 1742 50  0000 L CNN
+F 1 "batt" H 6479 1651 50  0000 L CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x02_Pitch2.54mm" H 6400 1750 50  0001 C CNN
+F 3 "~" H 6400 1750 50  0001 C CNN
+	1    6400 1750
+	1    0    0    -1  
+$EndComp
+Text GLabel 6200 1850 0    60   Input ~ 0
+gnd
+Text GLabel 6200 1750 0    50   Input ~ 0
+5vbatt
+NoConn ~ 6200 3200
+NoConn ~ 6200 3600
+NoConn ~ 6200 4000
+Text GLabel 6200 3500 0    50   Input ~ 0
+5vbatt-regulated
+Text GLabel 6200 3900 0    50   Input ~ 0
+5vbatt
+Text GLabel 6200 3800 0    60   Input ~ 0
+5v
+Text GLabel 6200 3400 0    60   Input ~ 0
+5v
+Text GLabel 6200 2600 0    50   Input ~ 0
+5vbatt-charge
+Text GLabel 6200 3000 0    50   Input ~ 0
+5vbatt-charge
+Text GLabel 6200 2050 0    50   Input ~ 0
+5vbatt-charge
+Text GLabel 6200 2150 0    60   Input ~ 0
+gnd
+Text GLabel 6200 2350 0    60   Input ~ 0
+gnd
+Text GLabel 6200 2250 0    50   Input ~ 0
+5vbatt
+Wire Wire Line
+	4450 1700 3950 1700
+Wire Wire Line
+	3950 1700 3950 3550
+Wire Wire Line
+	3950 3550 5250 3550
+Wire Wire Line
+	5250 3550 5250 3100
+Wire Wire Line
+	5250 3100 6200 3100
+Connection ~ 4450 1700
+Wire Wire Line
+	4450 1700 4450 1900
+Text GLabel 9100 4700 3    50   Input ~ 0
+5vbatt-regulated
+Text GLabel 3100 4700 0    50   Input ~ 0
+fan-in
+Text GLabel 2900 3400 0    50   Input ~ 0
+input
+Text GLabel 3050 4250 0    50   Input ~ 0
+input
+$Comp
+L Connector_Generic:Conn_01x02 J8
+U 1 1 5BB31C9F
+P 3250 4250
+F 0 "J8" H 3330 4242 50  0000 L CNN
+F 1 "bypass" H 3330 4151 50  0000 L CNN
+F 2 "psw-library:psw-konektor-zeleny" H 3250 4250 50  0001 C CNN
+F 3 "~" H 3250 4250 50  0001 C CNN
+	1    3250 4250
+	1    0    0    -1  
+$EndComp
+Text GLabel 3050 4350 0    50   Input ~ 0
+output
+$Comp
+L Connector_Generic:Conn_01x02 J9
+U 1 1 5BB32876
+P 3300 4700
+F 0 "J9" H 3379 4692 50  0000 L CNN
+F 1 "fan" H 3379 4601 50  0000 L CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x02_Pitch2.54mm" H 3300 4700 50  0001 C CNN
+F 3 "~" H 3300 4700 50  0001 C CNN
+	1    3300 4700
+	1    0    0    -1  
+$EndComp
+Text GLabel 3100 4800 0    60   Input ~ 0
+gnd
+$Comp
+L Connector_Generic:Conn_01x03 J7
+U 1 1 5BB3301E
+P 3100 3300
+F 0 "J7" H 3180 3342 50  0000 L CNN
+F 1 "int-ext-in" H 3180 3251 50  0000 L CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x03_Pitch2.54mm" H 3100 3300 50  0001 C CNN
+F 3 "~" H 3100 3300 50  0001 C CNN
+	1    3100 3300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2650 3200 2650 3300
+Wire Wire Line
+	2650 3300 2900 3300
+Wire Wire Line
+	4400 3300 4600 3300
+Wire Wire Line
+	4600 3300 4600 2700
+Wire Wire Line
+	4600 2500 4900 2500
+Wire Wire Line
+	6200 2700 4600 2700
+Connection ~ 4600 2700
+Wire Wire Line
+	4600 2700 4600 2500
+$Comp
+L Connector_Generic:Conn_01x02 J10
+U 1 1 5BB3794B
+P 1800 2050
+F 0 "J10" H 1880 2042 50  0000 L CNN
+F 1 "therm" H 1880 1951 50  0000 L CNN
+F 2 "psw-library:psw-konektor-zeleny" H 1800 2050 50  0001 C CNN
+F 3 "~" H 1800 2050 50  0001 C CNN
+	1    1800 2050
+	1    0    0    -1  
+$EndComp
+Text GLabel 1600 2150 0    60   Input ~ 0
+in2+
+Text GLabel 1600 2050 0    60   Input ~ 0
+gnd
+$Comp
+L Connector_Generic:Conn_01x03 J11
+U 1 1 5BB38C6F
+P 3200 2400
+F 0 "J11" H 3280 2442 50  0000 L CNN
+F 1 "on-off" H 3280 2351 50  0000 L CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x03_Pitch2.54mm" H 3200 2400 50  0001 C CNN
+F 3 "~" H 3200 2400 50  0001 C CNN
+	1    3200 2400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2750 2600 3000 2600
+Wire Wire Line
+	3000 2600 3000 2500
+Wire Wire Line
+	3000 2300 2550 2300
+Wire Wire Line
+	2550 2300 2550 2600
+Text GLabel 1450 4200 0    50   Input ~ 0
+relay-out
+$Comp
+L Connector_Generic:Conn_01x03 J12
+U 1 1 5BB39FCC
+P 1650 4200
+F 0 "J12" H 1730 4242 50  0000 L CNN
+F 1 "int-ext-out" H 1730 4151 50  0000 L CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x03_Pitch2.54mm" H 1650 4200 50  0001 C CNN
+F 3 "~" H 1650 4200 50  0001 C CNN
+	1    1650 4200
+	1    0    0    -1  
+$EndComp
+Text GLabel 1450 4300 0    50   Input ~ 0
+output
+Text GLabel 1450 4100 0    50   Input ~ 0
+fan-in
+$Comp
+L Connector_Generic:Conn_01x03 J13
+U 1 1 5BB2994F
+P 9100 4200
+F 0 "J13" V 9066 4012 50  0000 R CNN
+F 1 "e50p" V 8975 4012 50  0000 R CNN
+F 2 "TO_SOT_Packages_SMD:SOT-89-3_Handsoldering" H 9100 4200 50  0001 C CNN
+F 3 "~" H 9100 4200 50  0001 C CNN
+	1    9100 4200
+	0    -1   -1   0   
+$EndComp
+Text GLabel 9000 4700 3    60   Input ~ 0
+gnd
+$Comp
+L pspice:INDUCTOR L1
+U 1 1 5BB2A37E
+P 9450 3900
+F 0 "L1" H 9450 4115 50  0000 C CNN
+F 1 "INDUCTOR" H 9450 4024 50  0000 C CNN
+F 2 "Resistors_SMD:R_1218_HandSoldering" H 9450 3900 50  0001 C CNN
+F 3 "~" H 9450 3900 50  0001 C CNN
+	1    9450 3900
+	1    0    0    -1  
+$EndComp
+Text GLabel 10050 3900 2    50   Input ~ 0
+5vbatt
+Wire Wire Line
+	9000 4700 9000 4650
+Wire Wire Line
+	9100 4400 9100 4600
+$Comp
+L Device:C C4
+U 1 1 5BB2BDBF
+P 9900 4150
+F 0 "C4" V 9648 4150 50  0000 C CNN
+F 1 "C" V 9739 4150 50  0000 C CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 9938 4000 50  0001 C CNN
+F 3 "~" H 9900 4150 50  0001 C CNN
+	1    9900 4150
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	10050 3900 9950 3900
+Wire Wire Line
+	10050 4150 10050 4000
+Wire Wire Line
+	10050 4000 9950 4000
+Wire Wire Line
+	9950 4000 9950 3900
+Connection ~ 9950 3900
+Wire Wire Line
+	9950 3900 9700 3900
+Wire Wire Line
+	9750 4150 9700 4150
+Wire Wire Line
+	9700 4150 9700 4100
+Wire Wire Line
+	9700 4100 8800 4100
+Wire Wire Line
+	8800 4100 8800 4550
+Wire Wire Line
+	8800 4550 9000 4550
+Connection ~ 9000 4550
+Wire Wire Line
+	9000 4550 9000 4400
+Wire Wire Line
+	9200 4400 9400 4400
+Wire Wire Line
+	9400 4400 9400 4000
+Wire Wire Line
+	9400 4000 9200 4000
+Wire Wire Line
+	9200 4000 9200 3900
+$Comp
+L Device:CP1 C3
+U 1 1 5BB2DEDF
+P 9600 4750
+F 0 "C3" H 9715 4796 50  0000 L CNN
+F 1 "CP1" H 9715 4705 50  0000 L CNN
+F 2 "Capacitors_THT:CP_Radial_D5.0mm_P2.50mm" H 9600 4750 50  0001 C CNN
+F 3 "~" H 9600 4750 50  0001 C CNN
+	1    9600 4750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9600 4600 9350 4600
+Connection ~ 9100 4600
+Wire Wire Line
+	9100 4600 9100 4700
+Wire Wire Line
+	9000 4650 8850 4650
+Wire Wire Line
+	8850 4650 8850 5450
+Wire Wire Line
+	8850 5450 9600 5450
+Wire Wire Line
+	9600 5450 9600 4900
+Connection ~ 9000 4650
+Wire Wire Line
+	9000 4650 9000 4550
+$Comp
+L Device:D_Zener D2
+U 1 1 5BB2F3CE
+P 9650 4450
+F 0 "D2" H 9650 4234 50  0000 C CNN
+F 1 "D_Zener" H 9650 4325 50  0000 C CNN
+F 2 "Resistors_SMD:R_1206_HandSoldering" H 9650 4450 50  0001 C CNN
+F 3 "~" H 9650 4450 50  0001 C CNN
+	1    9650 4450
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	9400 4400 9400 4450
+Wire Wire Line
+	9400 4450 9500 4450
+Connection ~ 9400 4400
+Wire Wire Line
+	9800 4450 9800 4550
+Wire Wire Line
+	9800 4550 9350 4550
+Wire Wire Line
+	9350 4550 9350 4600
+Connection ~ 9350 4600
+Wire Wire Line
+	9350 4600 9100 4600
+$EndSCHEMATC
