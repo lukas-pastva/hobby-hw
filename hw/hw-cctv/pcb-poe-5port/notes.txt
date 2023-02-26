@@ -1,0 +1,17 @@
+p1 in rx tx + - 12Volt
+lm2596 z 12 na 3.5
+lm2596 z 24 na 12
+potom 4 volne vystupy, jeden bypass!!! - no poe eg vypinatelnz
+
+a ta ista doska bude na vstupe, ale bez switchchu cize vlastne len stp up alevstup bude ten bypasovy 
+
+nie bude stepup modul s velkym clhadicom na minusku
+od stredu je stred zasuvky 25.146
+
+10ks = 14
+20 = 28
+31.21 je po stred krajnho
+
+5+5 = 15.47
+23.92
+1.196

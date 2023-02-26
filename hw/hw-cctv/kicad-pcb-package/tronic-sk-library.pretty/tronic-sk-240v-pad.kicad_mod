@@ -1,0 +1,9 @@
+(module tronic-sk-240v-pad (layer F.Cu) (tedit 5AE6C4BF)
+  (fp_text reference 240V-out (at 0.889 -3.302) (layer F.SilkS) hide
+    (effects (font (size 1 1) (thickness 0.15)))
+  )
+  (fp_text value mains-out-L (at -1.905 3.175) (layer F.Fab)
+    (effects (font (size 1 1) (thickness 0.15)))
+  )
+  (pad 1 thru_hole circle (at 0 0) (size 2.49936 2.49936) (drill 2) (layers *.Cu *.Mask))
+)
