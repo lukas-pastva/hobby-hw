@@ -1,0 +1,663 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:power-source-pc-v1.3-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L conn:Conn_01x01 gnd3
+U 1 1 5B68C7C4
+P 1150 4100
+F 0 "gnd3" H 1150 4200 50  0000 C CNN
+F 1 "gnd" H 1150 4000 50  0000 C CNN
+F 2 "psw-library:psw-kontakt-smd-velky" H 1150 4100 50  0001 C CNN
+F 3 "" H 1150 4100 50  0001 C CNN
+	1    1150 4100
+	1    0    0    -1  
+$EndComp
+Text GLabel 950  4100 0    60   Input ~ 0
+gnd
+Text GLabel 3650 1200 0    60   Input ~ 0
+12v
+$Comp
+L conn:Conn_01x01 REG-measure1
+U 1 1 5B68E808
+P 3850 1650
+F 0 "REG-measure1" H 3850 1750 50  0000 C CNN
+F 1 "REG-measure" H 3850 1550 50  0000 C CNN
+F 2 "psw-library:psw-kontakt-smd-maly" H 3850 1650 50  0001 C CNN
+F 3 "" H 3850 1650 50  0001 C CNN
+	1    3850 1650
+	1    0    0    -1  
+$EndComp
+Text GLabel 3650 1650 0    60   Input ~ 0
+REG
+$Comp
+L conn:Conn_01x01 gnd-meter2
+U 1 1 5B68FE7B
+P 2750 1700
+F 0 "gnd-meter2" H 2750 1800 50  0000 C CNN
+F 1 "gnd-meter" H 2750 1600 50  0000 C CNN
+F 2 "psw-library:psw-kontakt-smd-maly" H 2750 1700 50  0001 C CNN
+F 3 "" H 2750 1700 50  0001 C CNN
+	1    2750 1700
+	1    0    0    -1  
+$EndComp
+Text GLabel 2550 1700 0    60   Input ~ 0
+gnd
+Text GLabel 5050 900  0    60   Input ~ 0
+aaa
+Text GLabel 5350 900  2    60   Input ~ 0
+aaa
+$Comp
+L Device:R R1
+U 1 1 5B922441
+P 5200 900
+F 0 "R1" V 5280 900 50  0000 C CNN
+F 1 "R" V 5200 900 50  0000 C CNN
+F 2 "Resistors_SMD:R_0201" V 5130 900 50  0001 C CNN
+F 3 "" H 5200 900 50  0001 C CNN
+	1    5200 900 
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:Fuse F1
+U 1 1 5B91CCD0
+P 1700 1750
+F 0 "F1" V 1780 1750 50  0000 C CNN
+F 1 "Fuse" V 1625 1750 50  0000 C CNN
+F 2 "Resistors_SMD:R_1206_HandSoldering" V 1630 1750 50  0001 C CNN
+F 3 "" H 1700 1750 50  0001 C CNN
+	1    1700 1750
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1150 1300 1150 2150
+Wire Wire Line
+	1150 1750 1550 1750
+Connection ~ 1150 1750
+$Comp
+L conn:Conn_01x01 gnd-meter1
+U 1 1 5C3BC43C
+P 2750 1300
+F 0 "gnd-meter1" H 2750 1400 50  0000 C CNN
+F 1 "gnd-meter" H 2750 1200 50  0000 C CNN
+F 2 "psw-library:psw-kontakt-smd-maly" H 2750 1300 50  0001 C CNN
+F 3 "" H 2750 1300 50  0001 C CNN
+	1    2750 1300
+	1    0    0    -1  
+$EndComp
+Text GLabel 2550 1300 0    60   Input ~ 0
+gnd
+$Comp
+L conn:Conn_01x01 5V-meter2
+U 1 1 5C3BD212
+P 950 1550
+F 0 "5V-meter2" H 950 1650 50  0000 C CNN
+F 1 "5V-meter" H 950 1450 50  0000 C CNN
+F 2 "psw-library:psw-kontakt-smd-maly" H 950 1550 50  0001 C CNN
+F 3 "" H 950 1550 50  0001 C CNN
+	1    950  1550
+	-1   0    0    1   
+$EndComp
+$Comp
+L conn:Conn_01x01 5V-meter3
+U 1 1 5C3BD4E8
+P 950 1900
+F 0 "5V-meter3" H 950 2000 50  0000 C CNN
+F 1 "5V-meter" H 950 1800 50  0000 C CNN
+F 2 "psw-library:psw-kontakt-smd-maly" H 950 1900 50  0001 C CNN
+F 3 "" H 950 1900 50  0001 C CNN
+	1    950  1900
+	-1   0    0    1   
+$EndComp
+$Comp
+L conn:Conn_01x01 12V-measure1
+U 1 1 5C3BDA25
+P 3850 1200
+F 0 "12V-measure1" H 3850 1300 50  0000 C CNN
+F 1 "12V-measure" H 3850 1100 50  0000 C CNN
+F 2 "psw-library:psw-kontakt-smd-maly" H 3850 1200 50  0001 C CNN
+F 3 "" H 3850 1200 50  0001 C CNN
+	1    3850 1200
+	1    0    0    -1  
+$EndComp
+$Comp
+L conn:Conn_01x01 panel-REG1
+U 1 1 5C3CCF93
+P 2700 3350
+F 0 "panel-REG1" H 2700 3450 50  0000 C CNN
+F 1 "panel-REG" H 2700 3250 50  0000 C CNN
+F 2 "psw-library:psw-bananik" H 2700 3350 50  0001 C CNN
+F 3 "" H 2700 3350 50  0001 C CNN
+	1    2700 3350
+	1    0    0    -1  
+$EndComp
+Text GLabel 2500 3350 0    60   Input ~ 0
+REG
+Text GLabel 1650 3350 0    60   Input ~ 0
+5V
+Text GLabel 1650 3700 0    60   Input ~ 0
+5V
+$Comp
+L conn:Conn_01x01 5V1
+U 1 1 5C3CD5F9
+P 1850 3700
+F 0 "5V1" H 1850 3800 50  0000 C CNN
+F 1 "5V" H 1850 3600 50  0000 C CNN
+F 2 "psw-library:psw-kontakt-smd-velky" H 1850 3700 50  0001 C CNN
+F 3 "" H 1850 3700 50  0001 C CNN
+	1    1850 3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L conn:Conn_01x01 panel-5V1
+U 1 1 5C3CDD09
+P 1850 3350
+F 0 "panel-5V1" H 1850 3450 50  0000 C CNN
+F 1 "panel-5V" H 1850 3250 50  0000 C CNN
+F 2 "psw-library:psw-bananik" H 1850 3350 50  0001 C CNN
+F 3 "" H 1850 3350 50  0001 C CNN
+	1    1850 3350
+	1    0    0    -1  
+$EndComp
+$Comp
+L conn:Conn_01x01 REG1
+U 1 1 5C3CE74C
+P 2700 3700
+F 0 "REG1" H 2700 3800 50  0000 C CNN
+F 1 "REG" H 2700 3600 50  0000 C CNN
+F 2 "psw-library:psw-kontakt-smd-velky" H 2700 3700 50  0001 C CNN
+F 3 "" H 2700 3700 50  0001 C CNN
+	1    2700 3700
+	1    0    0    -1  
+$EndComp
+Text GLabel 2500 3700 0    60   Input ~ 0
+REG
+$Comp
+L conn:Conn_01x01 5V-meter1
+U 1 1 5E76AF50
+P 950 1300
+F 0 "5V-meter1" H 950 1400 50  0000 C CNN
+F 1 "5V-meter" H 950 1200 50  0000 C CNN
+F 2 "psw-library:psw-kontakt-smd-maly" H 950 1300 50  0001 C CNN
+F 3 "" H 950 1300 50  0001 C CNN
+	1    950  1300
+	-1   0    0    1   
+$EndComp
+$Comp
+L conn:Conn_01x01 5V-meter4
+U 1 1 5E76AFBB
+P 950 2150
+F 0 "5V-meter4" H 950 2250 50  0000 C CNN
+F 1 "5V-meter" H 950 2050 50  0000 C CNN
+F 2 "psw-library:psw-kontakt-smd-maly" H 950 2150 50  0001 C CNN
+F 3 "" H 950 2150 50  0001 C CNN
+	1    950  2150
+	-1   0    0    1   
+$EndComp
+Connection ~ 1150 1550
+Connection ~ 1150 1900
+Wire Wire Line
+	1850 1750 1950 1750
+Wire Wire Line
+	1400 1750 1400 1550
+Wire Wire Line
+	1400 1550 1900 1550
+Wire Wire Line
+	1900 1550 1900 1750
+Connection ~ 1900 1750
+Connection ~ 1400 1750
+$Comp
+L conn:Conn_01x01 gnd-meter3
+U 1 1 5E76B3D8
+P 2750 2100
+F 0 "gnd-meter3" H 2750 2200 50  0000 C CNN
+F 1 "gnd-meter" H 2750 2000 50  0000 C CNN
+F 2 "psw-library:psw-kontakt-smd-maly" H 2750 2100 50  0001 C CNN
+F 3 "" H 2750 2100 50  0001 C CNN
+	1    2750 2100
+	1    0    0    -1  
+$EndComp
+Text GLabel 2550 2100 0    60   Input ~ 0
+gnd
+$Comp
+L conn:Conn_01x01 gnd-meter4
+U 1 1 5E76B73E
+P 2750 2500
+F 0 "gnd-meter4" H 2750 2600 50  0000 C CNN
+F 1 "gnd-meter" H 2750 2400 50  0000 C CNN
+F 2 "psw-library:psw-kontakt-smd-maly" H 2750 2500 50  0001 C CNN
+F 3 "" H 2750 2500 50  0001 C CNN
+	1    2750 2500
+	1    0    0    -1  
+$EndComp
+Text GLabel 2550 2500 0    60   Input ~ 0
+gnd
+Text GLabel 1950 1750 2    60   Input ~ 0
+5V
+Wire Bus Line
+	550  550  4450 550 
+Wire Bus Line
+	550  550  550  2950
+$Comp
+L conn:Conn_01x01 5V-measure1
+U 1 1 5E77932F
+P 3850 2100
+F 0 "5V-measure1" H 3850 2200 50  0000 C CNN
+F 1 "5V-measure" H 3850 2000 50  0000 C CNN
+F 2 "psw-library:psw-kontakt-smd-maly" H 3850 2100 50  0001 C CNN
+F 3 "" H 3850 2100 50  0001 C CNN
+	1    3850 2100
+	1    0    0    -1  
+$EndComp
+Text GLabel 3650 2100 0    60   Input ~ 0
+5V
+$Comp
+L conn:Conn_01x01 3V-measure1
+U 1 1 5E7793CA
+P 3850 2550
+F 0 "3V-measure1" H 3850 2650 50  0000 C CNN
+F 1 "3V-measure" H 3850 2450 50  0000 C CNN
+F 2 "psw-library:psw-kontakt-smd-maly" H 3850 2550 50  0001 C CNN
+F 3 "" H 3850 2550 50  0001 C CNN
+	1    3850 2550
+	1    0    0    -1  
+$EndComp
+Text GLabel 3650 2550 0    60   Input ~ 0
+3V
+Wire Bus Line
+	4450 550  4450 2950
+Wire Bus Line
+	4450 2950 550  2950
+Text Notes 700  900  0    118  ~ 24
+V/A meters
+$Comp
+L conn:Conn_01x01 gnd4
+U 1 1 5E77AC6E
+P 1150 4500
+F 0 "gnd4" H 1150 4600 50  0000 C CNN
+F 1 "gnd" H 1150 4400 50  0000 C CNN
+F 2 "psw-library:psw-kontakt-smd-velky" H 1150 4500 50  0001 C CNN
+F 3 "" H 1150 4500 50  0001 C CNN
+	1    1150 4500
+	1    0    0    -1  
+$EndComp
+Text GLabel 950  4500 0    60   Input ~ 0
+gnd
+$Comp
+L conn:Conn_01x01 gnd1
+U 1 1 5E77AE41
+P 1150 3350
+F 0 "gnd1" H 1150 3450 50  0000 C CNN
+F 1 "gnd" H 1150 3250 50  0000 C CNN
+F 2 "psw-library:psw-kontakt-smd-velky" H 1150 3350 50  0001 C CNN
+F 3 "" H 1150 3350 50  0001 C CNN
+	1    1150 3350
+	1    0    0    -1  
+$EndComp
+Text GLabel 950  3350 0    60   Input ~ 0
+gnd
+$Comp
+L conn:Conn_01x01 gnd2
+U 1 1 5E77AE48
+P 1150 3750
+F 0 "gnd2" H 1150 3850 50  0000 C CNN
+F 1 "gnd" H 1150 3650 50  0000 C CNN
+F 2 "psw-library:psw-kontakt-smd-velky" H 1150 3750 50  0001 C CNN
+F 3 "" H 1150 3750 50  0001 C CNN
+	1    1150 3750
+	1    0    0    -1  
+$EndComp
+Text GLabel 950  3750 0    60   Input ~ 0
+gnd
+$Comp
+L conn:Conn_01x01 gnd5
+U 1 1 5E77AF2E
+P 1150 4900
+F 0 "gnd5" H 1150 5000 50  0000 C CNN
+F 1 "gnd" H 1150 4800 50  0000 C CNN
+F 2 "psw-library:psw-kontakt-smd-velky" H 1150 4900 50  0001 C CNN
+F 3 "" H 1150 4900 50  0001 C CNN
+	1    1150 4900
+	1    0    0    -1  
+$EndComp
+Text GLabel 950  4900 0    60   Input ~ 0
+gnd
+$Comp
+L conn:Conn_01x01 gnd6
+U 1 1 5E77AF35
+P 1150 5300
+F 0 "gnd6" H 1150 5400 50  0000 C CNN
+F 1 "gnd" H 1150 5200 50  0000 C CNN
+F 2 "psw-library:psw-kontakt-smd-velky" H 1150 5300 50  0001 C CNN
+F 3 "" H 1150 5300 50  0001 C CNN
+	1    1150 5300
+	1    0    0    -1  
+$EndComp
+Text GLabel 950  5300 0    60   Input ~ 0
+gnd
+Text GLabel 1650 4050 0    60   Input ~ 0
+5V
+$Comp
+L conn:Conn_01x01 5V2
+U 1 1 5E77C868
+P 1850 4050
+F 0 "5V2" H 1850 4150 50  0000 C CNN
+F 1 "5V" H 1850 3950 50  0000 C CNN
+F 2 "psw-library:psw-kontakt-smd-velky" H 1850 4050 50  0001 C CNN
+F 3 "" H 1850 4050 50  0001 C CNN
+	1    1850 4050
+	1    0    0    -1  
+$EndComp
+Text GLabel 1650 4450 0    60   Input ~ 0
+5V
+$Comp
+L conn:Conn_01x01 5V3
+U 1 1 5E77C8CE
+P 1850 4450
+F 0 "5V3" H 1850 4550 50  0000 C CNN
+F 1 "5V" H 1850 4350 50  0000 C CNN
+F 2 "psw-library:psw-kontakt-smd-velky" H 1850 4450 50  0001 C CNN
+F 3 "" H 1850 4450 50  0001 C CNN
+	1    1850 4450
+	1    0    0    -1  
+$EndComp
+$Comp
+L conn:Conn_01x01 REG2
+U 1 1 5E77CD24
+P 2700 4050
+F 0 "REG2" H 2700 4150 50  0000 C CNN
+F 1 "REG" H 2700 3950 50  0000 C CNN
+F 2 "psw-library:psw-kontakt-smd-velky" H 2700 4050 50  0001 C CNN
+F 3 "" H 2700 4050 50  0001 C CNN
+	1    2700 4050
+	1    0    0    -1  
+$EndComp
+Text GLabel 2500 4050 0    60   Input ~ 0
+REG
+$Comp
+L conn:Conn_01x01 REG3
+U 1 1 5E77CDAF
+P 2700 4450
+F 0 "REG3" H 2700 4550 50  0000 C CNN
+F 1 "REG" H 2700 4350 50  0000 C CNN
+F 2 "psw-library:psw-kontakt-smd-velky" H 2700 4450 50  0001 C CNN
+F 3 "" H 2700 4450 50  0001 C CNN
+	1    2700 4450
+	1    0    0    -1  
+$EndComp
+Text GLabel 2500 4450 0    60   Input ~ 0
+REG
+Text GLabel 3250 3350 0    60   Input ~ 0
+3V
+Text GLabel 3250 3700 0    60   Input ~ 0
+3V
+$Comp
+L conn:Conn_01x01 3V1
+U 1 1 5E77D69F
+P 3450 3700
+F 0 "3V1" H 3450 3800 50  0000 C CNN
+F 1 "3V" H 3450 3600 50  0000 C CNN
+F 2 "psw-library:psw-kontakt-smd-velky" H 3450 3700 50  0001 C CNN
+F 3 "" H 3450 3700 50  0001 C CNN
+	1    3450 3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L conn:Conn_01x01 panel-3V1
+U 1 1 5E77D6A5
+P 3450 3350
+F 0 "panel-3V1" H 3450 3450 50  0000 C CNN
+F 1 "panel-3V" H 3450 3250 50  0000 C CNN
+F 2 "psw-library:psw-bananik" H 3450 3350 50  0001 C CNN
+F 3 "" H 3450 3350 50  0001 C CNN
+	1    3450 3350
+	1    0    0    -1  
+$EndComp
+Text GLabel 3250 4050 0    60   Input ~ 0
+3V
+$Comp
+L conn:Conn_01x01 3V2
+U 1 1 5E77D6AC
+P 3450 4050
+F 0 "3V2" H 3450 4150 50  0000 C CNN
+F 1 "3V" H 3450 3950 50  0000 C CNN
+F 2 "psw-library:psw-kontakt-smd-velky" H 3450 4050 50  0001 C CNN
+F 3 "" H 3450 4050 50  0001 C CNN
+	1    3450 4050
+	1    0    0    -1  
+$EndComp
+Text GLabel 3250 4450 0    60   Input ~ 0
+3V
+$Comp
+L conn:Conn_01x01 3V3
+U 1 1 5E77D6B3
+P 3450 4450
+F 0 "3V3" H 3450 4550 50  0000 C CNN
+F 1 "3V" H 3450 4350 50  0000 C CNN
+F 2 "psw-library:psw-kontakt-smd-velky" H 3450 4450 50  0001 C CNN
+F 3 "" H 3450 4450 50  0001 C CNN
+	1    3450 4450
+	1    0    0    -1  
+$EndComp
+Text GLabel 4100 3350 0    60   Input ~ 0
+12V
+Text GLabel 5350 3700 0    60   Input ~ 0
+GND-REG
+$Comp
+L conn:Conn_01x01 GND-REG2
+U 1 1 5E77D7B7
+P 5550 3700
+F 0 "GND-REG2" H 5550 3800 50  0000 C CNN
+F 1 "GND-REG" H 5550 3600 50  0000 C CNN
+F 2 "psw-library:psw-kontakt-smd-velky" H 5550 3700 50  0001 C CNN
+F 3 "" H 5550 3700 50  0001 C CNN
+	1    5550 3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L conn:Conn_01x01 panel-12V1
+U 1 1 5E77D7BD
+P 4300 3350
+F 0 "panel-12V1" H 4300 3450 50  0000 C CNN
+F 1 "panel-12V" H 4300 3250 50  0000 C CNN
+F 2 "psw-library:psw-bananik" H 4300 3350 50  0001 C CNN
+F 3 "" H 4300 3350 50  0001 C CNN
+	1    4300 3350
+	1    0    0    -1  
+$EndComp
+Text GLabel 4100 4050 0    60   Input ~ 0
+12V
+$Comp
+L conn:Conn_01x01 12V2
+U 1 1 5E77D7C4
+P 4300 4050
+F 0 "12V2" H 4300 4150 50  0000 C CNN
+F 1 "12V" H 4300 3950 50  0000 C CNN
+F 2 "psw-library:psw-kontakt-smd-velky" H 4300 4050 50  0001 C CNN
+F 3 "" H 4300 4050 50  0001 C CNN
+	1    4300 4050
+	1    0    0    -1  
+$EndComp
+Text GLabel 4100 4450 0    60   Input ~ 0
+12V
+$Comp
+L conn:Conn_01x01 12V3
+U 1 1 5E77D7CB
+P 4300 4450
+F 0 "12V3" H 4300 4550 50  0000 C CNN
+F 1 "12V" H 4300 4350 50  0000 C CNN
+F 2 "psw-library:psw-kontakt-smd-velky" H 4300 4450 50  0001 C CNN
+F 3 "" H 4300 4450 50  0001 C CNN
+	1    4300 4450
+	1    0    0    -1  
+$EndComp
+$Comp
+L conn:Conn_01x01 GND-REG1
+U 1 1 5E77FB41
+P 5550 3300
+F 0 "GND-REG1" H 5550 3400 50  0000 C CNN
+F 1 "GND-REG" H 5550 3200 50  0000 C CNN
+F 2 "psw-library:psw-bananik" H 5550 3300 50  0001 C CNN
+F 3 "" H 5550 3300 50  0001 C CNN
+	1    5550 3300
+	1    0    0    -1  
+$EndComp
+Text GLabel 5350 3300 0    60   Input ~ 0
+GND-REG
+$Comp
+L conn:Conn_01x01 GND-12V1
+U 1 1 5E77FD1A
+P 6700 3300
+F 0 "GND-12V1" H 6700 3400 50  0000 C CNN
+F 1 "GND-12V" H 6700 3200 50  0000 C CNN
+F 2 "psw-library:psw-bananik" H 6700 3300 50  0001 C CNN
+F 3 "" H 6700 3300 50  0001 C CNN
+	1    6700 3300
+	1    0    0    -1  
+$EndComp
+Text GLabel 6500 3300 0    60   Input ~ 0
+GND-12V
+$Comp
+L conn:Conn_01x01 GND-3V1
+U 1 1 5E77FD9C
+P 8850 3350
+F 0 "GND-3V1" H 8850 3450 50  0000 C CNN
+F 1 "GND-3V" H 8850 3250 50  0000 C CNN
+F 2 "psw-library:psw-bananik" H 8850 3350 50  0001 C CNN
+F 3 "" H 8850 3350 50  0001 C CNN
+	1    8850 3350
+	1    0    0    -1  
+$EndComp
+Text GLabel 8650 3350 0    60   Input ~ 0
+GND-3V
+$Comp
+L conn:Conn_01x01 GND-5V1
+U 1 1 5E77FE84
+P 7750 3300
+F 0 "GND-5V1" H 7750 3400 50  0000 C CNN
+F 1 "GND-3V" H 7750 3200 50  0000 C CNN
+F 2 "psw-library:psw-bananik" H 7750 3300 50  0001 C CNN
+F 3 "" H 7750 3300 50  0001 C CNN
+	1    7750 3300
+	1    0    0    -1  
+$EndComp
+Text GLabel 7550 3300 0    60   Input ~ 0
+GND-5V
+Text GLabel 4100 3700 0    60   Input ~ 0
+12V
+$Comp
+L conn:Conn_01x01 12V1
+U 1 1 5E780703
+P 4300 3700
+F 0 "12V1" H 4300 3800 50  0000 C CNN
+F 1 "12V" H 4300 3600 50  0000 C CNN
+F 2 "psw-library:psw-kontakt-smd-velky" H 4300 3700 50  0001 C CNN
+F 3 "" H 4300 3700 50  0001 C CNN
+	1    4300 3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L conn:Conn_01x01 GND-12V2
+U 1 1 5E780C99
+P 6700 3700
+F 0 "GND-12V2" H 6700 3800 50  0000 C CNN
+F 1 "GND-12V" H 6700 3600 50  0000 C CNN
+F 2 "psw-library:psw-kontakt-smd-velky" H 6700 3700 50  0001 C CNN
+F 3 "" H 6700 3700 50  0001 C CNN
+	1    6700 3700
+	1    0    0    -1  
+$EndComp
+Text GLabel 6500 3700 0    60   Input ~ 0
+GND-12V
+$Comp
+L conn:Conn_01x01 gnd7
+U 1 1 5E781AC9
+P 1150 5700
+F 0 "gnd7" H 1150 5800 50  0000 C CNN
+F 1 "gnd" H 1150 5600 50  0000 C CNN
+F 2 "psw-library:psw-kontakt-smd-velky" H 1150 5700 50  0001 C CNN
+F 3 "" H 1150 5700 50  0001 C CNN
+	1    1150 5700
+	1    0    0    -1  
+$EndComp
+Text GLabel 950  5700 0    60   Input ~ 0
+gnd
+$Comp
+L conn:Conn_01x01 GND-5V2
+U 1 1 5E782A87
+P 7750 3700
+F 0 "GND-5V2" H 7750 3800 50  0000 C CNN
+F 1 "GND-5V" H 7750 3600 50  0000 C CNN
+F 2 "psw-library:psw-kontakt-smd-velky" H 7750 3700 50  0001 C CNN
+F 3 "" H 7750 3700 50  0001 C CNN
+	1    7750 3700
+	1    0    0    -1  
+$EndComp
+Text GLabel 7550 3700 0    60   Input ~ 0
+GND-5V
+$Comp
+L conn:Conn_01x01 GND-3V2
+U 1 1 5E782BBD
+P 8850 3700
+F 0 "GND-3V2" H 8850 3800 50  0000 C CNN
+F 1 "GND-3V" H 8850 3600 50  0000 C CNN
+F 2 "psw-library:psw-kontakt-smd-velky" H 8850 3700 50  0001 C CNN
+F 3 "" H 8850 3700 50  0001 C CNN
+	1    8850 3700
+	1    0    0    -1  
+$EndComp
+Text GLabel 8650 3700 0    60   Input ~ 0
+GND-3V
+$Comp
+L conn:Conn_01x01 -12V1
+U 1 1 5E77A4C0
+P 9900 3350
+F 0 "-12V1" H 9900 3450 50  0000 C CNN
+F 1 "-12V" H 9900 3250 50  0000 C CNN
+F 2 "psw-library:psw-bananik" H 9900 3350 50  0001 C CNN
+F 3 "" H 9900 3350 50  0001 C CNN
+	1    9900 3350
+	1    0    0    -1  
+$EndComp
+Text GLabel 9700 3350 0    60   Input ~ 0
+-12V
+$Comp
+L conn:Conn_01x01 GND-12V3
+U 1 1 5E77BA8B
+P 9900 3700
+F 0 "GND-12V3" H 9900 3800 50  0000 C CNN
+F 1 "GND-12V" H 9900 3600 50  0000 C CNN
+F 2 "psw-library:psw-bananik" H 9900 3700 50  0001 C CNN
+F 3 "" H 9900 3700 50  0001 C CNN
+	1    9900 3700
+	1    0    0    -1  
+$EndComp
+Text GLabel 9700 3700 0    60   Input ~ 0
+GND
+$Comp
+L conn:Conn_01x01 -12V2
+U 1 1 5E77C599
+P 10900 3350
+F 0 "-12V2" H 10900 3450 50  0000 C CNN
+F 1 "-12V" H 10900 3250 50  0000 C CNN
+F 2 "psw-library:psw-kontakt-smd-velky" H 10900 3350 50  0001 C CNN
+F 3 "" H 10900 3350 50  0001 C CNN
+	1    10900 3350
+	1    0    0    -1  
+$EndComp
+Text GLabel 10700 3350 0    60   Input ~ 0
+-12V
+$EndSCHEMATC
